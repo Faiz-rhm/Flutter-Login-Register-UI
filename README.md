@@ -8,7 +8,9 @@ Link: https://dribbble.com/shots/15527697-Login-Register-Page
 
 | Login  | Register |
 | ------------- | ------------- |
-|  ![Login](https://user-images.githubusercontent.com/14290499/144716044-9e4631f3-9308-49b9-92d4-7d78ec69ae31.png)| ![Register](https://user-images.githubusercontent.com/14290499/144716262-2e8d331d-e1cb-465b-ae85-7a5530cba0e0.png) |
+| ![Login](https://user-images.githubusercontent.com/14290499/144716863-2f6c87ea-7a3d-4075-9d35-44ed838e1a01.png)
+ | ![Register](https://user-images.githubusercontent.com/14290499/144717013-1ef6329f-28fd-4634-ae6a-2789d2a19dd9.png)
+ |
      
      
 ## Pull Requests
