@@ -6,10 +6,10 @@ Link: https://dribbble.com/shots/15527697-Login-Register-Page
 
 ## Screenshots
 
-| Login | Register |
-| --- | --- |
-| ![Login](https://user-images.githubusercontent.com/14290499/144701358-6e4911d0-27bc-44a1-8b33-85491f0a6225.png)
- ![Register](https://user-images.githubusercontent.com/14290499/144701344-1709a3ab-a848-41ec-9f5d-6419330a5a7d.png)
+| Login  | Register |
+| ------------- | ------------- |
+|     ![Login](https://user-images.githubusercontent.com/14290499/144701437-294a9b14-0788-40ac-b669-fb4bb52568a0.png) |    ![Register](https://user-images.githubusercontent.com/14290499/144701444-79c1b277-9ffe-4a94-a2d0-d04e4ea4d4b9.png)
+     |
 
 
 
