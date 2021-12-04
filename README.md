@@ -1,6 +1,16 @@
 # flutter_login
 
-A new Flutter project.
+Simple basic login and register app designed in flutter. App design is based on Login/Register Design designed by Keivan Sina
+
+Link: https://dribbble.com/shots/15527697-Login-Register-Page
+
+## Screenshots
+
+| Command | Description |
+| --- | --- |
+| `git status` | List all *new or modified* files |
+| `git diff` | Show file differences that **haven't been** staged |
+
 
 ## Getting Started
 
