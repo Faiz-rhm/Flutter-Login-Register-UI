@@ -29,7 +29,7 @@ class LoginContainer extends StatelessWidget {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsets.symmetric(vertical: 160, horizontal: 60),
+                        EdgeInsets.symmetric(vertical: 170, horizontal: 80),
                     child: Wrap(
                       direction: Axis.horizontal, //Vertical || Horizontal
                       children: <Widget>[

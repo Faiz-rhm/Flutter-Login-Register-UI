@@ -35,7 +35,7 @@ class _RegisterContainerState extends State<RegisterContainer> {
                 children: [
                   Padding(
                     padding:
-                        EdgeInsets.symmetric(vertical: 230, horizontal: 180),
+                        EdgeInsets.symmetric(vertical: 250, horizontal: 170),
                     child: Wrap(
                       direction: Axis.horizontal, //Vertical || Horizontal
                       children: <Widget>[

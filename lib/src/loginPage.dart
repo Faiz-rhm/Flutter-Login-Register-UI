@@ -137,7 +137,7 @@ class _LoginPageState extends State<LoginPage> {
         child: Stack(
           children: [
             Positioned(
-                height: MediaQuery.of(context).size.height * 0.40,
+                height: MediaQuery.of(context).size.height * 0.43,
                 child: LoginContainer()),
             SingleChildScrollView(
               child: Column(
@@ -146,7 +146,7 @@ class _LoginPageState extends State<LoginPage> {
                     padding: EdgeInsets.symmetric(horizontal: 20),
                     child: Column(
                       children: [
-                        SizedBox(height: height * .5),
+                        SizedBox(height: height * .55),
                         _usernameWidget(),
                         SizedBox(height: 20),
                         _passwordWidget(),
@@ -155,7 +155,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                   SizedBox(height: 30),
                   _submitButton(),
-                  SizedBox(height: height * .060),
+                  SizedBox(height: height * .035),
                   _createAccountLabel(),
                 ],
               ),
