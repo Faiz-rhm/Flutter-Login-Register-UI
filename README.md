@@ -6,9 +6,10 @@ Link: https://dribbble.com/shots/15527697-Login-Register-Page
 
 ## Screenshots
 
-| Command | Description |
+| Login | Register |
 | --- | --- |
-| `git status` | List all *new or modified* files |
+| `git stat![Login](https://user-images.githubusercontent.com/14290499/144701313-f402217d-8dce-43b5-ba44-f2b84e9a5490.png)
+us` | List all *new or modified* files |
 | `git diff` | Show file differences that **haven't been** staged |
 
 
