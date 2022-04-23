@@ -21,6 +21,7 @@ I welcome and encourage all pull requests. It usually will take me within 24-48 
 
 - [Instagram](https://www.instagram.com/faiz.rhm)
 - [Youtube Channel](https://www.youtube.com/channel/UCM1OzZsZ5FQIg01vdKGAw7g)
+- [Twitter](https://twitter.com/faiz_rhm)
 
 
 ## Getting Started
