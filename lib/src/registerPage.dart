@@ -17,7 +17,7 @@ class _RegisterPageState extends State<RegisterPage> {
         TextFormField(
           keyboardType: TextInputType.name,
           textInputAction: TextInputAction.next,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             // hintText: 'Enter your full name',
             labelText: 'Name',
             labelStyle:
@@ -37,7 +37,7 @@ class _RegisterPageState extends State<RegisterPage> {
         TextFormField(
           keyboardType: TextInputType.name,
           textInputAction: TextInputAction.next,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             // hintText: 'Enter your full name',
             labelText: 'Email',
             labelStyle:
@@ -57,7 +57,7 @@ class _RegisterPageState extends State<RegisterPage> {
         TextFormField(
           keyboardType: TextInputType.name,
           textInputAction: TextInputAction.next,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             // hintText: 'Enter your full name',
             labelText: 'Password',
             labelStyle:
@@ -83,16 +83,16 @@ class _RegisterPageState extends State<RegisterPage> {
           Positioned(
             right: 20,
             child: SizedBox.fromSize(
-              size: Size.square(80.0), // button width and height
-              child: ClipOval(
+              size: const Size.square(80.0), // button width and height
+              child: const ClipOval(
                 child: Material(
                   color: Color.fromRGBO(252, 228, 138, 1), // button color
                 ),
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 50, bottom: 20),
+          const Padding(
+            padding: EdgeInsets.only(right: 50, bottom: 20),
             child: Text(
               'Register',
               style: TextStyle(
@@ -109,13 +109,13 @@ class _RegisterPageState extends State<RegisterPage> {
 
   Widget _createLoginLabel() {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20),
-      padding: EdgeInsets.all(15),
+      margin: const EdgeInsets.symmetric(vertical: 20),
+      padding: const EdgeInsets.all(15),
       alignment: Alignment.bottomLeft,
       child: InkWell(
         onTap: () => Navigator.push(
-            context, MaterialPageRoute(builder: (context) => LoginPage())),
-        child: Text(
+            context, MaterialPageRoute(builder: (context) => const LoginPage())),
+        child: const Text(
           'Login',
           style: TextStyle(
               fontSize: 14,
@@ -137,24 +137,24 @@ class _RegisterPageState extends State<RegisterPage> {
           children: [
             Positioned(
                 height: MediaQuery.of(context).size.height * 0.90,
-                child: RegisterContainer()),
+                child: const RegisterContainer()),
             SingleChildScrollView(
               child: Column(
                 children: <Widget>[
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Column(
                       children: [
                         SizedBox(height: height * .4),
                         _nameWidget(),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         _emailWidget(),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         _passwordWidget(),
                       ],
                     ),
                   ),
-                  SizedBox(height: 80),
+                  const SizedBox(height: 80),
                   _submitButton(),
                   SizedBox(height: height * .020),
                   _createLoginLabel(),

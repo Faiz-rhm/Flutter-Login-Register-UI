@@ -1,3 +1,4 @@
+// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:flutter_login/src/registerPage.dart';
 import 'package:flutter_login/src/widget/loginContainer.dart';
@@ -8,7 +9,12 @@ class LoginPage extends StatefulWidget {
   @override
   _LoginPageState createState() => _LoginPageState();
 }
-
+////////////////////////////////////////////////////
+/// @Faiz-rhm on Instagrram
+///
+///
+/// https://github.com/Faiz-rhm
+///////////////////////////////////////////////////
 class _LoginPageState extends State<LoginPage> {
   Widget _usernameWidget() {
     return Stack(
@@ -16,7 +22,7 @@ class _LoginPageState extends State<LoginPage> {
         TextFormField(
           keyboardType: TextInputType.name,
           textInputAction: TextInputAction.next,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             labelText: 'Email',
             labelStyle: TextStyle(
                 color: Color.fromRGBO(173, 183, 192, 1),
@@ -36,7 +42,7 @@ class _LoginPageState extends State<LoginPage> {
         TextFormField(
           keyboardType: TextInputType.name,
           textInputAction: TextInputAction.next,
-          decoration: InputDecoration(
+          decoration: const InputDecoration(
             labelText: 'Password',
             labelStyle: TextStyle(
                 color: Color.fromRGBO(173, 183, 192, 1),
@@ -62,16 +68,16 @@ class _LoginPageState extends State<LoginPage> {
           Positioned(
             right: 20,
             child: SizedBox.fromSize(
-              size: Size.square(80.0),// button width and height
-              child: ClipOval(
+              size: const Size.square(80.0),// button width and height
+              child: const ClipOval(
                 child: Material(
                   color: Color.fromRGBO(252, 228, 138, 1), // button color
                 ),
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.only(
+          const Padding(
+            padding: EdgeInsets.only(
               right: 50,
               bottom: 20
             ),
@@ -91,16 +97,16 @@ class _LoginPageState extends State<LoginPage> {
 
   Widget _createAccountLabel() {
     return Container(
-      margin: EdgeInsets.symmetric(vertical: 20),
-      padding: EdgeInsets.all(15),
+      margin: const EdgeInsets.symmetric(vertical: 20),
+      padding: const EdgeInsets.all(15),
       alignment: Alignment.bottomCenter,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           InkWell(
             onTap: () => Navigator.push(context,
-                MaterialPageRoute(builder: (context) => RegisterPage())),
-            child: Text(
+                MaterialPageRoute(builder: (context) => const RegisterPage())),
+            child: const Text(
               'Register',
               style: TextStyle(
                   fontSize: 14,
@@ -109,7 +115,7 @@ class _LoginPageState extends State<LoginPage> {
                   decorationThickness: 2),
             ),
           ),
-          InkWell(
+          const InkWell(
             // onTap: () {
             //   // Navigator.push(
             //   //     context, MaterialPageRoute(builder: (context) => SignUpPage()));
@@ -138,22 +144,22 @@ class _LoginPageState extends State<LoginPage> {
           children: [
             Positioned(
                 height: MediaQuery.of(context).size.height * 0.43,
-                child: LoginContainer()),
+                child: const LoginContainer()),
             SingleChildScrollView(
               child: Column(
                 children: <Widget>[
                   Container(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Column(
                       children: [
                         SizedBox(height: height * .55),
                         _usernameWidget(),
-                        SizedBox(height: 20),
+                        const SizedBox(height: 20),
                         _passwordWidget(),
                       ],
                     ),
                   ),
-                  SizedBox(height: 30),
+                  const SizedBox(height: 30),
                   _submitButton(),
                   SizedBox(height: height * .035),
                   _createAccountLabel(),

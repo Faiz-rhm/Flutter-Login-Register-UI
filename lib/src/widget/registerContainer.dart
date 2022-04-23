@@ -17,7 +17,7 @@ class _RegisterContainerState extends State<RegisterContainer> {
           // alignment: Alignment.bottomCenter,
           child: Container(
             width: MediaQuery.of(context).size.width * 2.8,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color.fromRGBO(62, 193, 201, 1),
             ),
           ),
@@ -28,28 +28,27 @@ class _RegisterContainerState extends State<RegisterContainer> {
           child: Container(
               width: MediaQuery.of(context).size.width * 2,
               height: MediaQuery.of(context).size.height * 0.6,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color.fromRGBO(54, 79, 107, 1),
               ),
               child: Stack(
                 children: [
                   Padding(
-                    padding:
-                        EdgeInsets.symmetric(vertical: 250, horizontal: 170),
+                    padding: const EdgeInsets.symmetric(vertical: 290, horizontal: 190),
                     child: Wrap(
                       direction: Axis.horizontal, //Vertical || Horizontal
                       children: <Widget>[
                         Transform.rotate(
-                            angle: 32,
-                            child: Text('Create \nAccount!',
-                                textAlign: TextAlign.left,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 45,
-                                  fontWeight: FontWeight.bold,
-                                  // height: 5.5
-                                ))),
+                          angle: 32,
+                          child: const Text('Create \nAccount!',
+                            textAlign: TextAlign.left,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 45,
+                              fontWeight: FontWeight.bold,
+                              // height: 5.5
+                            ))),
                       ],
                     ),
                   )
@@ -61,7 +60,7 @@ class _RegisterContainerState extends State<RegisterContainer> {
           alignment: Alignment.topRight,
           child: Container(
             width: MediaQuery.of(context).size.width * 0.2,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color.fromRGBO(252, 82, 133, 1),
             ),
           ),

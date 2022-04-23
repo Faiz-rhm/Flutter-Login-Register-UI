@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class LoginContainer extends StatelessWidget {
-  LoginContainer({Key? key}) : super(key: key);
+  const LoginContainer({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class LoginContainer extends StatelessWidget {
           angle: 32,
           child: Container(
             width: MediaQuery.of(context).size.width * 1.5,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color.fromRGBO(62, 193, 201, 1),
             ),
           ),
@@ -22,28 +22,28 @@ class LoginContainer extends StatelessWidget {
           child: Container(
               width: MediaQuery.of(context).size.width * 2,
               height: MediaQuery.of(context).size.height * 2,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color.fromRGBO(54, 79, 107, 1),
               ),
               child: Stack(
                 children: [
                   Padding(
                     padding:
-                        EdgeInsets.symmetric(vertical: 170, horizontal: 80),
+                        const EdgeInsets.symmetric(vertical: 170, horizontal: 80),
                     child: Wrap(
                       direction: Axis.horizontal, //Vertical || Horizontal
                       children: <Widget>[
                         Transform.rotate(
-                            angle: 38,
-                            child: Text('Hello \nAgain!',
-                                textAlign: TextAlign.left,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 45,
-                                  fontWeight: FontWeight.bold,
-                                  // height: 5.5
-                                ))),
+                          angle: 38,
+                          child: const Text('Hello \nAgain!',
+                            textAlign: TextAlign.left,
+                            overflow: TextOverflow.ellipsis,
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 45,
+                              fontWeight: FontWeight.bold,
+                              // height: 5.5
+                            ))),
                       ],
                     ),
                   )
@@ -55,7 +55,7 @@ class LoginContainer extends StatelessWidget {
           alignment: Alignment.topRight,
           child: Container(
             width: MediaQuery.of(context).size.width * 0.5,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               color: Color.fromRGBO(252, 82, 133, 1),
             ),
           ),
