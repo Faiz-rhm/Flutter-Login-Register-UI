@@ -1,4 +1,4 @@
-# flutter_login
+# Flutter-Login-Rgister-UI
 
 Simple basic login and register app designed in flutter. App design is based on Login/Register Design designed by Keivan Sina
 
