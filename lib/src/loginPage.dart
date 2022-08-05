@@ -1,58 +1,78 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:flutter_login/src/registerPage.dart';
 import 'package:flutter_login/src/widget/loginContainer.dart';
 
-class LoginPage extends StatefulWidget {
+class LoginPage extends StatelessWidget {
   const LoginPage({Key? key}) : super(key: key);
 
   @override
-  _LoginPageState createState() => _LoginPageState();
-}
-////////////////////////////////////////////////////
-/// @Faiz-rhm on Instagrram
-///
-///
-/// https://github.com/Faiz-rhm
-///////////////////////////////////////////////////
-class _LoginPageState extends State<LoginPage> {
-  Widget _usernameWidget() {
-    return Stack(
-      children: [
-        TextFormField(
-          keyboardType: TextInputType.name,
-          textInputAction: TextInputAction.next,
-          decoration: const InputDecoration(
-            labelText: 'Email',
-            labelStyle: TextStyle(
-                color: Color.fromRGBO(173, 183, 192, 1),
-                fontWeight: FontWeight.bold),
-            enabledBorder: UnderlineInputBorder(
-              borderSide: BorderSide(color: Color.fromRGBO(173, 183, 192, 1)),
+  Widget build(BuildContext context) {
+    final height = MediaQuery.of(context).size.height;
+    return Scaffold(
+      body: SizedBox(
+        height: height,
+        child: Stack(
+          children: [
+            Positioned(
+              height: height * 0.43,
+              child: const LoginContainer()
             ),
-          ),
+            SingleChildScrollView(
+              child: Column(
+                children: <Widget>[
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
+                    child: Column(
+                      children: [
+                        SizedBox(height: height * .55),
+                        _usernameWidget(),
+                        const SizedBox(height: 20),
+                        _passwordWidget(),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 30),
+                  _submitButton(),
+                  SizedBox(height: height * .035),
+                  _createAccountLabel(context),
+                ],
+              ),
+            ),
+          ],
         ),
-      ],
+      ),
+    );
+  }
+
+  Widget _usernameWidget() {
+    return TextFormField(
+      keyboardType: TextInputType.name,
+      textInputAction: TextInputAction.next,
+      decoration: const InputDecoration(
+        labelText: 'Email',
+        labelStyle: TextStyle(
+          color: Color.fromRGBO(173, 183, 192, 1),
+          fontWeight: FontWeight.bold),
+          enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Color.fromRGBO(173, 183, 192, 1)),
+        ),
+      ),
     );
   }
 
   Widget _passwordWidget() {
-    return Stack(
-      children: [
-        TextFormField(
-          keyboardType: TextInputType.name,
-          textInputAction: TextInputAction.next,
-          decoration: const InputDecoration(
-            labelText: 'Password',
-            labelStyle: TextStyle(
-                color: Color.fromRGBO(173, 183, 192, 1),
-                fontWeight: FontWeight.bold),
-            enabledBorder: UnderlineInputBorder(
-              borderSide: BorderSide(color: Color.fromRGBO(173, 183, 192, 1)),
-            ),
-          ),
+    return TextFormField(
+      keyboardType: TextInputType.name,
+      textInputAction: TextInputAction.next,
+      decoration: const InputDecoration(
+        labelText: 'Password',
+        labelStyle: TextStyle(
+          color: Color.fromRGBO(173, 183, 192, 1),
+          fontWeight: FontWeight.bold),
+          enabledBorder: UnderlineInputBorder(
+          borderSide: BorderSide(color: Color.fromRGBO(173, 183, 192, 1)),
         ),
-      ],
+      ),
     );
   }
 
@@ -60,10 +80,7 @@ class _LoginPageState extends State<LoginPage> {
     return Align(
       alignment: Alignment.centerRight,
       child: InkWell(
-        onTap: () {
-          // Navigator.push(
-          //     context, MaterialPageRoute(builder: (context) => SignUpPage()));
-        },
+        onTap: () {},
         child: Stack(children: [
           Positioned(
             right: 20,
@@ -84,10 +101,10 @@ class _LoginPageState extends State<LoginPage> {
             child: Text(
               'Login',
               style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 40,
-                  fontWeight: FontWeight.bold,
-                  height: 1.6),
+                color: Colors.black,
+                fontSize: 40,
+                fontWeight: FontWeight.bold,
+                height: 1.6),
             ),
           ),
         ]),
@@ -95,7 +112,7 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
-  Widget _createAccountLabel() {
+  Widget _createAccountLabel(BuildContext context) {
     return Container(
       margin: const EdgeInsets.symmetric(vertical: 20),
       padding: const EdgeInsets.all(15),
@@ -109,65 +126,24 @@ class _LoginPageState extends State<LoginPage> {
             child: const Text(
               'Register',
               style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  decoration: TextDecoration.underline,
-                  decorationThickness: 2),
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                decoration: TextDecoration.underline,
+                decorationThickness: 2),
             ),
           ),
           const InkWell(
-            // onTap: () {
-            //   // Navigator.push(
-            //   //     context, MaterialPageRoute(builder: (context) => SignUpPage()));
-            // },
+            // onTap: (){},
             child: Text(
               'Forgot Password',
               style: TextStyle(
-                  fontSize: 14,
-                  fontWeight: FontWeight.bold,
-                  decoration: TextDecoration.underline,
-                  decorationThickness: 2),
+                fontSize: 14,
+                fontWeight: FontWeight.bold,
+                decoration: TextDecoration.underline,
+                decorationThickness: 2),
             ),
           ),
         ],
-      ),
-    );
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
-    return Scaffold(
-      body: SizedBox(
-        height: height,
-        child: Stack(
-          children: [
-            Positioned(
-                height: MediaQuery.of(context).size.height * 0.43,
-                child: const LoginContainer()),
-            SingleChildScrollView(
-              child: Column(
-                children: <Widget>[
-                  Container(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Column(
-                      children: [
-                        SizedBox(height: height * .55),
-                        _usernameWidget(),
-                        const SizedBox(height: 20),
-                        _passwordWidget(),
-                      ],
-                    ),
-                  ),
-                  const SizedBox(height: 30),
-                  _submitButton(),
-                  SizedBox(height: height * .035),
-                  _createAccountLabel(),
-                ],
-              ),
-            ),
-          ],
-        ),
       ),
     );
   }
