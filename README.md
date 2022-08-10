@@ -1,22 +1,28 @@
-# flutter_login
+# Flutter-Login-Rgister-UI
 
 Simple basic login and register app designed in flutter. App design is based on Login/Register Design designed by Keivan Sina
 
 Link: https://dribbble.com/shots/15527697-Login-Register-Page
 
+
 ## Screenshots
 
-| Login  | Register |
-| ------------- | ------------- |
-| ![Login](https://user-images.githubusercontent.com/14290499/144722499-87f17510-b797-4618-a3e5-2fabc1854e8c.png) | ![Register](https://user-images.githubusercontent.com/14290499/144722509-9804df77-d9ca-4c10-a057-72bd2844f279.png) |
-     
+<img width="1080" alt="Screen Shot 2022-04-23 at 9 54 27 PM" src="https://user-images.githubusercontent.com/14290499/164917128-608a7cb2-2db6-4c3a-b680-5c8e98e40772.png">
+
+<img width="1080" alt="Screen Shot 2022-04-23 at 9 54 40 PM" src="https://user-images.githubusercontent.com/14290499/164917182-c7c9c930-bfc2-47b4-8363-b91108303f4b.png">
+
      
 ## Pull Requests
+
 I welcome and encourage all pull requests. It usually will take me within 24-48 hours to respond to any issue or request.
 
 
 ## Created & Maintained By
-Faiz Rhm 
+
+- [Instagram](https://www.instagram.com/faiz.rhm)
+- [Youtube Channel](https://www.youtube.com/channel/UCM1OzZsZ5FQIg01vdKGAw7g)
+- [Twitter](https://twitter.com/faiz_rhm)
+
 
 ## Getting Started
 
